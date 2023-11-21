@@ -1,7 +1,5 @@
-from ast import List
-
 class Solution:
-    def findMedianSortedArrays(self, A: List[int], B: List[int]) -> float:
+    def findMedianSortedArrays(self, A, B) -> float:
  
           # Assumption both A and B cannot be empty
         n = len(A)
@@ -34,3 +32,13 @@ class Solution:
                 end = mid - 1
             else:
                 start = mid + 1
+
+if __name__ == '__main__':
+    solver = Solution()
+
+    nums1 = input()
+    nums2 = input()
+
+    print(solver.findMedianSortedArrays(
+        list(map(int, nums1.split(','))), list(map(int, nums2.split(',')))
+    ))

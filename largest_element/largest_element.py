@@ -1,5 +1,5 @@
 class Solution:
-  def findKthLargest(self, nums: List[int], k: int) -> int:
+  def findKthLargest(self, nums, k: int) -> int:
     def quickSelect(l: int, r: int, k: int) -> int:
       pivot = nums[r]
 
@@ -18,3 +18,11 @@ class Solution:
       return quickSelect(nextSwapped + 1, r, k - count)
 
     return quickSelect(0, len(nums) - 1, k)
+
+if __name__ == '__main__':
+  solver = Solution()
+
+  nums = input()
+  nums = list(map(int, nums.split(',')))
+  k = int(input())
+  print(solver.findKthLargest(nums, k))

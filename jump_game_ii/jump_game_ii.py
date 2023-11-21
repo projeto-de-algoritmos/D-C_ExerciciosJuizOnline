@@ -10,3 +10,9 @@ class Solution(object):
                     dp[i] = min(dp[i], dp[j] + 1)
 
         return dp[n-1]
+
+if __name__ == '__main__':
+    s = Solution()
+
+    nums = input()
+    print(s.jump(list(map(int, nums.split(',')))))
