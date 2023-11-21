@@ -21,11 +21,6 @@ O repositório contém soluções para algumas questões de juíz online. Segue 
 - Problema dos Pares Mais Próximos
  (https://www.beecrowd.com.br/judge/pt/problems/view/1295)
 
-- Huffman Coding on Segment (https://codeforces.com/contest/700/problem/D)
-- Knapsack (https://codeforces.com/contest/1446/problem/A)
-- BUSYMAN - I AM VERY BUSY (https://www.spoj.com/problems/BUSYMAN/)
-- Death Note (https://codeforces.com/contest/1016/problem/A)
-
 
 ## Instalação 
 Para executar as questões deste repositório, é necessário ter um interpretador python3.
